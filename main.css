@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 50px;
+}
+
+.container{
+    display: flex;
+    margin:0 auto;
+    max-width: 800px;
+    flex-direction: column;
+    text-align: right;
+}
+
+.flex-column{
+    display: flex;
+}
+
+.button{
+    flex-basis: 25%; 
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+
+}
+
+.double{
+    flex-basis: 50%;
+}
+
+.hasil-hitung{
+    font-size: 4.2rem;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.display{
+    padding: 25px 0px 25px 0px;
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    background: black;
+}
+
+.bagi, .plus, .min, .same{
+    background: orange;
+}
+
+.card{
+    border-radius: 50px;
+    padding: 25px 50px 20px 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover{
+    background: beige;
+}
+
+
+@media screen and (max-width:813px) {
+    .button{
+        padding: 25px;
+    }
+    .card{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width:513px) {
+    .button{
+        padding: 10px;
+    }
+}
