@@ -52,8 +52,18 @@ function performCalculation(){
       } else {
         result = parseInt(kalkulator.firstNumber) - parseInt(kalkulator.displayNumber);
       }
+
+        // objek yang akan dikirimkan sebagai argumen fungsi putHistory()
+        const history = {
+            firstNumber: kalkulator.firstNumber,
+            secondNumber: kalkulator.displayNumber,
+            operator: kalkulator.operation,
+            result: result
+        }
+        putHistory(history);       
      
       kalkulator.displayNumber = result;
+      renderHistory()
 }
 
 function inverseNumber() {
@@ -89,6 +99,8 @@ for(const tombol of button){
             DisplayNumber();
             return;
           }
+
+         
           inputDisplay(target.innerText)
           DisplayNumber();
 

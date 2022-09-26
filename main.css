@@ -63,6 +63,33 @@ body{
     background: beige;
 }
 
+th, td{
+    padding: 25px;
+    text-align: center;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+th {
+    background-color: orange;
+    color: white;
+ }
+ 
+
+ tr:nth-child(even) {
+    background-color: #d2d2d2;
+ }
 
 @media screen and (max-width:813px) {
     .button{
@@ -71,10 +98,26 @@ body{
     .card{
         padding: 25px;
     }
+    th, td{
+        padding: 8px;
+        text-align: center;
+    }
+
+    .table{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:513px) {
     .button{
         padding: 10px;
     }
+    th, td{
+        padding: 8px;
+        text-align: center;
+    }
+    .table{
+        width: 100%;
+    }
 }
+
